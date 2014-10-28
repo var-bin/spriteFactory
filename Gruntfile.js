@@ -50,4 +50,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.registerTask('default', ['sprite']);
   grunt.registerTask('mobSiteLVH', ['sprite:mobSiteLVH']);
+  grunt.registerTask('webSiteLVH', ['sprite:webSiteLVH']);
+  grunt.registerTask('paymentLVH', ['sprite:paymentLVH']);
 };
