@@ -12,6 +12,8 @@ module.exports = function(grunt) {
       },
       mobSiteLVH: {
         'src': ['<%= basePath %>/LVH/_mobSite/images/*.png'],
+        'destImg': '<%= basePath %>/LVH/_mobSite/sprite/sprite.png',
+        'destCSS': '<%= basePath %>/LVH/_mobSite/sprite/sprite.less'
       },
       webSiteLVH: {
 
@@ -35,4 +37,5 @@ module.exports = function(grunt) {
   });
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.registerTask('default', ['sprite']);
+  grunt.registerTask('mobSiteLVH', ['sprite:mobSiteLVH']);
 };
