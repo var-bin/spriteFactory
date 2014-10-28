@@ -1,25 +1,38 @@
 'use strict';
 module.exports = function(grunt) {
   var ls = require('./lsv1');
-  var basePath: './site/spriteFactory';
+  var basePath = './site/spriteFactory';
   grunt.initConfig({
     sprite: {
-      options: {
+      mobSiteLVH: {
         'cssTemplate': 'spritesmith-template.mustache',
         'padding': 2,
         'imgPath': '../images/sprite.png',
         'cssFormat': 'less',
-      },
-      mobSiteLVH: {
-        'src': ['<%= basePath %>/LVH/_mobSite/images/*.png'],
-        'destImg': '<%= basePath %>/LVH/_mobSite/sprite/sprite.png',
-        'destCSS': '<%= basePath %>/LVH/_mobSite/sprite/sprite.less'
+        'algorithm': 'binary-tree',
+        'src': ['./site/spriteFactory/LVH/_mobSite/images/*.png'],
+        'destImg': './site/spriteFactory/LVH/_mobSite/sprite/sprite.png',
+        'destCSS': './site/spriteFactory/LVH/_mobSite/sprite/sprite.less'
       },
       webSiteLVH: {
-
+        'cssTemplate': 'spritesmith-template.mustache',
+        'padding': 2,
+        'imgPath': '../images/sprite.png',
+        'cssFormat': 'less',
+        'algorithm': 'binary-tree',
+        'src': ['./site/spriteFactory/LVH/_webSite/images/*.png'],
+        'destImg': './site/spriteFactory/LVH/_webSite/sprite/sprite.png',
+        'destCSS': './site/spriteFactory/LVH/_webSite/sprite/sprite.less'
       },
-      paymentLVH: {
-
+      payment: {
+        'cssTemplate': 'spritesmith-template.mustache',
+        'padding': 2,
+        'imgPath': '../images/sprite.png',
+        'cssFormat': 'less',
+        'algorithm': 'binary-tree',
+        'src': ['./site/spriteFactory/LVH/_webSite/images/*.png'],
+        'destImg': './site/spriteFactory/LVH/_webSite/sprite/sprite.png',
+        'destCSS': './site/spriteFactory/LVH/_webSite/sprite/sprite.less'
       }
     }
     /*sprite: {
