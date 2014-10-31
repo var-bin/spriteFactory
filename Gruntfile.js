@@ -52,5 +52,5 @@ module.exports = function(grunt) {
   grunt.registerTask('mobSiteLVH', ['sprite:mobSiteLVH']);
   grunt.registerTask('webSiteLVH', ['sprite:webSiteLVH']);
   grunt.registerTask('paymentLVH', ['sprite:paymentLVH']);
-  grunt.registerTask('LVH', ['sprite:mobSiteLVH', 'sprite:webSiteLVH', 'sprite:paymentLVH']);
+  grunt.registerTask('LVH', ['sprite:mobSiteLVH', 'sprite:webSiteLVH', 'sprite:payment']);
 };
