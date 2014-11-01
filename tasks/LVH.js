@@ -32,6 +32,4 @@ module.exports = function(grunt) {
       'destCSS': '<%= basePath %>/LVH/_payment/sprite/sprite.less'
     }
   });
-
-  grunt.loadNpmTasks('grunt-spritesmith');
 }
