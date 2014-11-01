@@ -47,6 +47,7 @@ module.exports = function(grunt) {
       }
     }*/
   });
+  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadTasks('./tasks');
   grunt.registerTask('default', ['sprite']);
   grunt.registerTask('LVH', ['sprite:mobSiteLVH', 'sprite:webSiteLVH', 'sprite:paymentLVH']);
