@@ -12,12 +12,12 @@ module.exports = function(grunt) {
   /* 
   * !!! add config to grunt.initConfig !!!
   * -------------------------------------------
-  * If we call helpers.addConfig(prop, value)
+  * If you call helpers.addConfig(prop, value)
   * then you'll set that property and its corresponding
   * value on the grunt.initConfig object
   */
   helpers.addConfig('sprite', themes);
-  
+
   //load task for spritesmith
   grunt.loadNpmTasks('grunt-spritesmith');
 }
