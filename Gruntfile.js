@@ -9,4 +9,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['sprite']);
 
   helpers.registerTask('LVH', ['mobSite', 'webSite', 'payment']);
+  helpers.registerTask('SD', ['mobSite', 'webSite']);
+  helpers.registerTask('MD', ['payment']);
+  helpers.registerTask('BN', ['webSite']);
 };
