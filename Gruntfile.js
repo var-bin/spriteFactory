@@ -8,5 +8,5 @@ module.exports = function(grunt) {
   
   grunt.registerTask('default', ['sprite']);
 
-  helpers.registerTask('LVH');
+  helpers.registerTask('LVH', ['mobSite', 'webSite', 'payment']);
 };
