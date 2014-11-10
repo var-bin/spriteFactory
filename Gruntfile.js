@@ -12,4 +12,8 @@ module.exports = function(grunt) {
   helpers.registerTask('SD', ['mobSite', 'webSite']);
   helpers.registerTask('MD', ['payment']);
   helpers.registerTask('BN', ['webSite']);
+
+  grunt.registerTask('spriteList', 'Get list themes...', function() {
+    grunt.log.write(helpers.getThemesList());
+  });
 };
