@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   //load helpers
   var helpers = require('../lib/helpers')(grunt);
 
-  helpers.initAddSprite(themes);
+  helpers.addSprites(themes);
 
   /* 
   * !!! add config to grunt.initConfig !!!
