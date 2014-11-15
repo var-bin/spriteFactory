@@ -7,11 +7,8 @@ module.exports = function(grunt) {
   grunt.loadTasks('./tasks');
   //register default task
   grunt.registerTask('default', ['sprite']);
-  //register custom task
-  helpers.registerTask('LVH', ['mobSite', 'webSite', 'payment']);
-  helpers.registerTask('SD', ['mobSite', 'webSite']);
-  helpers.registerTask('MD', ['payment']);
-  helpers.registerTask('BN', ['webSite']);
+  //register custom multi task for grunt-spritesmith
+  helpers.registerMultiSprite();
 
   grunt.registerTask('spriteList', 'Get list themes...', function() {
     grunt.log.write(helpers.getThemesList());
