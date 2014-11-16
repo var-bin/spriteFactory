@@ -4,7 +4,7 @@ var themes = {};
 module.exports = function(grunt) {
   //load helpers
   var helpers = require('../lib/helpers')(grunt);
-
+  //add configs for grunt-spritesmith
   helpers.addSprites(themes);
 
   /* 
