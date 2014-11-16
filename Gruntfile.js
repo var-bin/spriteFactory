@@ -10,7 +10,7 @@ module.exports = function(grunt) {
   //register custom multi task for grunt-spritesmith
   helpers.registerMultiSprite();
 
-  grunt.registerTask('spriteList', 'Get list themes...', function() {
+  grunt.registerTask('spriteList', 'Get list of themes...', function() {
     grunt.log.write(helpers.getThemesList());
   });
 };
