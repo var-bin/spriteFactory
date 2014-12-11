@@ -5,6 +5,7 @@ module.exports = function(grunt) {
 
   //load tasks
   grunt.loadTasks('./tasks');
+
   //register default task
   grunt.registerTask('default', ['sprite']);
   //register custom multi task for grunt-spritesmith
