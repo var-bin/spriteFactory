@@ -41,7 +41,7 @@
 }
 
 ._sprite-width-mob(@sprite) {
-  @width: ~`Math.round("@{sprite}".split(', ')[4].slice(0, -2)/2)`;
+  @width: ~`Math.floor("@{sprite}".split(', ')[4].slice(0, -2)/2)`;
   width: ~"@{width}px";
 }
 
@@ -50,7 +50,7 @@
 }
 
 ._sprite-height-mob(@sprite) {
-  @height: ~`Math.round("@{sprite}".split(', ')[5].slice(0, -2)/2)`;
+  @height: ~`Math.floor("@{sprite}".split(', ')[5].slice(0, -2)/2)`;
   height: ~"@{height}px";
 }
 
@@ -61,8 +61,8 @@
 }
 
 ._sprite-position-mob(@sprite) {
-  @sprite-offset-x: ~`Math.round("@{sprite}".split(', ')[2].slice(0, -2)/2)`;
-  @sprite-offset-y: ~`Math.round("@{sprite}".split(', ')[3].slice(0, -2)/2)`;
+  @sprite-offset-x: ~`Math.ceil("@{sprite}".split(', ')[2].slice(0, -2)/2)`;
+  @sprite-offset-y: ~`Math.ceil("@{sprite}".split(', ')[3].slice(0, -2)/2)`;
   background-position: ~"@{sprite-offset-x}px"  ~"@{sprite-offset-y}px";
 }
 
@@ -72,7 +72,7 @@
 }
 
 ._sprite-background-size(@sprite) {
-  @bs: ~`Math.round("@{sprite}".split(', ')[6].slice(0, -2)/2)`;
+  @bs: ~`Math.floor("@{sprite}".split(', ')[6].slice(0, -2)/2)`;
   background-size: ~"@{bs}px";
 }
 
